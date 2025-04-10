@@ -6,6 +6,7 @@ export default function HomeScreen(){
     const STARTVALUE = 0;
     const nome = "leandro";
     const [count,setCount] = useState(STARTVALUE);
+    const [name, setNome] = useState(nome);
 
     
 
@@ -18,7 +19,7 @@ export default function HomeScreen(){
             <Button title="Diminuir" onPress={()=> {setCount(count - 1)}}/>
             <Button title="Resetar" onPress={()=> {setCount(STARTVALUE)}}/>
 
-            <CustomButton title= "Name"/>
+           <CustomButton title="Botão vermelho" onPress={() => {setNome('leandro' + count)}}/>
         </View>
     );
 }
