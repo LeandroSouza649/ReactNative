@@ -8,7 +8,7 @@ interface Props {
 
 export default function CustomButton({title, onPress}: Props){
     return(
-        <TouchableOpacity style= {styles.button} onPress ={onPress}>
+        <TouchableOpacity style= {styles.button} onPress={onPress}>
             <Text style = {styles.text}>{title}</Text> 
         </TouchableOpacity>
     )
