@@ -12,7 +12,7 @@ export default function HomeScreen(){
 
 
     return (
-        <View>
+        <View style= {{flex: 1, justifyContent: "center", alignItems: "center"}}>
             <Text>Bem-Vindo ao meu App! {name}</Text>
             <Text>Contador: {count}</Text>
             <Button title="Aumentar" onPress={()=> {setCount(count + 1)}}/>
