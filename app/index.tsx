@@ -1,6 +1,6 @@
 import CustomButton from "@/components/CustomButton";
 import React, { useState } from "react";
-import { Button, Text, View } from "react-native";
+import { Button, Text, TextInput, View } from "react-native";
 
 export default function HomeScreen(){
     const STARTVALUE = 0;
@@ -18,6 +18,8 @@ export default function HomeScreen(){
             <Button title="Aumentar" onPress={()=> {setCount(count + 1)}}/>
             <Button title="Diminuir" onPress={()=> {setCount(count - 1)}}/>
             <Button title="Resetar" onPress={()=> {setCount(STARTVALUE)}}/>
+
+            <TextInput placeholder="Digite algo" onChangeText={setNome}/>
 
            <CustomButton title="Botão vermelho" onPress={() => {setNome('leandro' + count)}}/>
         </View>
